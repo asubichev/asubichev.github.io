@@ -10,20 +10,9 @@
     color: var(--fontColor);
     font-family: helvetica;
 }
+
 body {
-    background: var(--bg);
-}
-
-ul {
-    font-family: helvetica;
-}
-
-li {
-    list-style: armenian;
-}
-
-.list {
-    list-style: square;
+        margin: 50px 0 0 0;
 }
 
 #msg {
@@ -40,8 +29,19 @@ li {
     --fontColor: var(--green);
 }
 
-.centerThatAnvil{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.my-back { 
+    background-color: bisque;
+}
+
+.my-text {
+    font-family: Merriweather Sans;
+    text-align: center;
+}
+
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
 }

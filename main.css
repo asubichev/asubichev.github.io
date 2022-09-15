@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Silkscreen&display=swap');
+
+
 :root {
     --black: #000;
     --white: #fff;
@@ -8,34 +11,25 @@
 
 * {
     color: var(--fontColor);
-    font-family: helvetica;
 }
 
 body {
-        margin: 50px 0 0 0;
+    margin: 50px 0 0 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-#msg {
-    font-family: monospace;
-}
-
-.light-theme {
-    --bg: var(--nicebg);
-    --fontColor: var(--black);
-}
-
-.dark-theme {
-    --bg: var(--black);
-    --fontColor: var(--green);
+.top-image{
+    width: 20rem;
+    height: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translate(0, 6rem);
+    border-radius: 50%;
 }
 
 .my-back { 
     background-color: bisque;
-}
-
-.my-text {
-    font-family: Merriweather Sans;
-    text-align: center;
 }
 
 .center{
@@ -44,4 +38,41 @@ body {
     top: 50%; /*how high*/
     transform: translate(-50%, -50%);
     padding: 40px;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 50vh;
+}
+
+.container{
+    align-content: center;
+    place-items: center;
+    display: grid;
+}
+
+.btn-lg{
+    text-align: center;
+    width:150px;
+}
+
+.hidden{
+    opacity: 0;
+    filter:blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }

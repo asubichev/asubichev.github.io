@@ -17,13 +17,25 @@
     <div class="container center shadow">
 
         <div class="row justify-content-center">
-            <div class="h1 my-text" style="text-align: center; width: 150px;"> Hello! </div>
+            <div class="h1 btn btn-lg" style="text-align: center; width: 150px;" disabled>
+                <div class="text my-text">
+                    Hello!
+                </div>
+            </div>
         </div>
-
+        
         <div class="row justify-content-center">
-            <button class="my-text btn btn-outline-secondary" type="button" style="width: 50px; --bs-btn-padding-y: .10rem;" disabled> HI </button>
+            <input class="c-checkbox" type="checkbox" id="checkbox">
+                <div class="c-formContainer">
+                    <form class="c-form" action="">
+                        <input class="c-form__input" placeholder="Type me" type="text" pattern="[A-Za-z0-9]+">
+                        <label for="checkbox" class="c-form__buttonLabel">
+                            <button class="c-form__button">Send</button>
+                        </label>
+                        <label for="checkbox" class="c-form__toggle" data-title="Hello!"></label>
+                    </form>
+                </div>
         </div>
-    
     </div>
 
 

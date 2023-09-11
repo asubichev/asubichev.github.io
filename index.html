@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-    <title>Hello!</title>
+    <title>AS</title>
     <meta charset= "UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,32 +13,16 @@
      rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script defer src="script.js"></script>
 </head>
-<body class="my-back">
+<body class="clean-bg center">
 
-    <img class="top-image" src="./assets/IMG_0458 - Copy.png" alt="img"><!--TODO: change alt text and provide padding to image-->
-
-    <section class="hidden">
-        <div class="container shadow" style="height: 8rem; width: 20rem;">
-            <h1>Hello!</h1>
-            <p>I'm Aaron</p>
+    <div class="card container">
+        <div class="form__group field">
+            <input type="input" class="form__field" placeholder="X" name="x" id='x' required />
+            <label for="name" class="form__label">X</label>
+          </div>
+        <div class="button__group">
+            <button>Enter</button>
         </div>
-    </section>  
-
-    <!--TODO: Style this text to look better-->
-    <!--TODO: On mobile, h2 text looks bad-->
-    <section class="hidden">
-        <div class="container shadow" style="height: 15rem;">
-            <h2 style="transform: translate(0, -25%);">I solve problems</h2>
-            <p style="margin-left: 2rem; margin-right: 2rem;">I am a junior at The University of Texas at Dallas studying Computer Science. I love when I code something up and I see it actually work for me, or for others. I am interested in Software Engineering internships for Summer of 2023.</p>
-        </div>
-    </section>
-
-    <section class="hidden">
-        <a class="btn btn-lg" style="width: 12rem;" href="./assets/resume.pdf" target="_blank">Get to know me</div>
-    </section>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </div>
 </body>
 </html>
